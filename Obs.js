@@ -38,7 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const randomIndex = Math.floor(Math.random() * songs.length);
       const chosenSong = songs[randomIndex];
 
-      chosenSong.play();
+      chosenSong.play().then(() => {
+          console.log('Playback started');
+      }).catch(error => {
+          console.error('Playback failed:', error);
+          // Inform the user and request interaction
+          document.body.addEventListener('click', () => {
+              chosenSong.play().then(() => {
+                  console.log('Playback started after user interaction');
+              }).catch(error => {
+                  console.error('Playback still failed:', error);
+              });
+          }, { once: true });
+      });
   }
 
   playRandomSong(); 
