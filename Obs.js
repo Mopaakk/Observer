@@ -18,13 +18,13 @@ function playGif() {
 
   // Chance to play the GIF every 5 seconds
   setInterval(() => {
-      if (Math.random() > 0.4) { // 20% chance to play the GIF
+      if (Math.random() > 0.2) { // 20% chance to play the GIF
           gifElement.src = gifSrc;
           setTimeout(() => {
               gifElement.src = staticSrc;
           }, 1500); // Play for 3 seconds
       }
-  }, 5000);
+  }, 10000);
 }
 
 // Initialize the GIF control
