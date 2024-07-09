@@ -19,7 +19,7 @@ body{
   }
   
   .titles {
-    width: 30%;
+    width: 25%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     color: white;
@@ -52,8 +52,8 @@ body{
   .text.active {
     display: block; 
     position: absolute;
-    top: 20%; 
-    right: 33%; 
+    top: 26%; 
+    left: 65%; 
     transform: translate(-50%, -50%); 
     font-size: 20px;
   }
