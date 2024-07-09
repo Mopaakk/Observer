@@ -5,6 +5,12 @@
 body{
     background-color: black; 
     color: #ffffff;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .container {
@@ -14,7 +20,6 @@ body{
   
   .titles {
     width: 30%;
-    background-color: #000000;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     color: white;
@@ -52,4 +57,12 @@ body{
     transform: translate(-50%, -50%); 
     font-size: 20px;
   }
- 
+ .gif-container{
+  position: absolute;
+  top: -7%; 
+  right: 43%; 
+ }
+ #static-gif {
+  width: 200px; 
+  height: auto;
+}
