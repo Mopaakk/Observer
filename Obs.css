@@ -66,3 +66,6 @@ body{
   width: 200px; 
   height: auto;
 }
+audio {
+  display: none;
+}

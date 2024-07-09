@@ -31,3 +31,20 @@ function playGif() {
 document.addEventListener('DOMContentLoaded', () => {
   playGif();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  function playRandomSong() {
+      const song1 = document.getElementById('song1');
+      const song2 = document.getElementById('song2');
+      const songs = [song1, song2].filter(song => song !== null); // Filter out null elements
+      if (songs.length === 0) return; // Exit if no songs are found
+
+      const randomIndex = Math.floor(Math.random() * songs.length);
+      const chosenSong = songs[randomIndex];
+
+      chosenSong.play();
+  }
+
+  playRandomSong(); // Play a random song on page load
+});
+});
