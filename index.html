@@ -7,8 +7,54 @@
     <link rel="stylesheet" type="text/css" href="Obs.css" />
 </head>
 <body>
-  <div class="ext">
-    <p>Testing</p>
-  </div>
+  <div id="welcome-screen" class="welcome-screen">
+    <div class="welcome-text">It is the seventh year since i found myself separated from my people, this treatise is inscribed with the utmost secrecy and solemnity. These words, crafted by mine, and my friends hands, are meant solely for mine eyes, and none others. Whosoever dareth to peruse these forbidden pages, be forewarned: madness and despair shall be thy companions, for such knowledge is not intended for mortal ken. Proceed at thy peril, for these writings are sealed with the gravest of intentions. For if thou art able to read these words, surely I have met the fate of mine companions, and the same doom awaiteth thee at the culmination of these inscriptions.</div>
+    <div class="enter-text" onclick="enterSite()">Enter</div>
+</div>
+<div id="main-content" class="main-content hidden">
+    <div class="gif-container">
+      <img id="static-gif" src="eye.png" data-gif="eye.gif" alt="Gif Image">
+    </div>
+    <div class="container">
+        <div class="titles">
+          <div class="title" onclick="showText('chapter1')">Year 7. Day 189.</div>
+          <div class="title" onclick="showText('chapter2')">Chapter 2</div>
+          <div class="title" onclick="showText('chapter3')">Chapter 3</div>
+        </div>
+        <div class="texts">
+          <div id="chapter1" class="text active">MORNING
+          <br>Verily, through yon endless reaches of this dark dimension, hath we made a wondrous discovery. 
+          A tower, akin to a lighthouse amidst a vast ocean of mist, doth beckon us with its enchanting 
+          music. Some amongst us did recognize the melody, and swiftly traversed the fog to discover the
+          tower, deserted by its erstwhile inhabitants.
+          <br>
+          <br>AFTERNOON
+          <br>I still lack a clear image of who dwelt within yon tower, save that they relished golf and 
+          whiskey, and diligently chronicled the souls ensnared within this realm.
+          <br>
+          <br>NIGHT
+          <br>Some dub our sojourning abode as House of Arkham, while others favor the Arkham Hotel, and our
+          playwright, Wilbur, doth insist on the House of Arkham, likening it to a tale from a dime 
+          comic he once perused, drawn from the quill of Lovecraft. We hath cleared the chambers, and I have
+          taken possession of the study wherein I discovered vinyl records and cassettes recounting tales 
+          and musings of the prior dweller. The House, my preferred appelation, harbors artifacts and 
+          contrivances from other realms i presume, whose workings do perplex. Yonder in the cellar, one 
+          mirror do intrigue us grievously—it doth emit a blue energy and seem to conjure memories from the 
+          very air. Until its nature be comprehended, I have enjoined the forbidding of the basement.
+          <br>
+          <br>POSTSCRIPT
+          <br>A few amongst us did read tales and partake of a modicum of whiskey ere retiring to our beds.
+          'Twas indeed fine fare, serving to alleviate the cares of the day.
+          <br>
+          <br>
+        </div>
+          <div id="chapter2" class="text">Text for Chapter 2.</div>
+          
+          <div id="chapter3" class="text">Text for Chapter 3.</div>
+        </div>
+      </div>
+      <audio id="song1" src="FallingDown.mp3" preload="auto"></audio>
+      <audio id="song2" src="RotBlood.mp3" preload="auto"></audio>
+      <script src="Obs.js"></script>
 </body>
 </html>

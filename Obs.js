@@ -1,3 +1,9 @@
+function enterSite() {
+  document.getElementById('welcome-screen').style.display = 'none';
+  document.getElementById('main-content').style.display = 'flex';
+  playGif();
+  playRandomSong();
+}
 function showText(chapterId) {
     const texts = document.querySelectorAll('.text');
     texts.forEach(text => {
@@ -6,7 +12,6 @@ function showText(chapterId) {
     const selectedText = document.getElementById(chapterId);
     selectedText.classList.add('active');
   }
-
   function playGif() {
     const gifElement = document.getElementById('static-gif');
     const staticSrc = gifElement.src;
@@ -26,6 +31,9 @@ function showText(chapterId) {
 // Initialize the GIF control
 document.addEventListener('DOMContentLoaded', () => {
   playGif();
+});
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('main-content').style.display = 'none';
 });
 
 document.addEventListener('DOMContentLoaded', () => {
