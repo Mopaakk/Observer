@@ -26,9 +26,22 @@ function showText(chapterId) {
         }
     }, 10000);
   }
-  
 
-// Initialize the GIF control
+  function promptPassword() {
+    const password = prompt("Enter the password:", "");
+    if (password === null) {
+        // User clicked 'Cancel'
+        return;
+    }
+    const correctPassword = "test"; // Replace with your actual password
+    if (password === correctPassword) {
+        window.location.href = "https://www.youtube.com/watch?v=c4KNd0Yv6d0"; // Replace with your desired URL
+    } else {
+        alert("Incorrect.");
+    }
+}
+
+document.getElementById('static-gif').addEventListener('click', promptPassword);
 document.addEventListener('DOMContentLoaded', () => {
   playGif();
 });
