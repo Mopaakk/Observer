@@ -104,3 +104,11 @@ body{
 audio {
   display: none;
 }
+.shh {
+  color: inherit; 
+  text-decoration: none; 
+  cursor: pointer; 
+}
+.shh:hover {
+  color: inherit; 
+}
