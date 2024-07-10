@@ -69,16 +69,29 @@ body{
   .text {
     display: none; 
     color: #ffffff;
+    text-align: justify;
+    max-height: 70vh;
+    overflow-y: auto;
   }
   
   .text.active {
     display: block; 
     position: absolute;
-    top: 68.5%; 
+    top: 52%; 
     left: 65%; 
     transform: translate(-50%, -50%); 
     font-size: 20px;
   }
+  .text::-webkit-scrollbar {
+    width: 10px;
+}
+.text::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 10px;
+}
+.text::-webkit-scrollbar-track {
+    background: #000; 
+}
  .gif-container{
   position: absolute;
   top: -7%; 
