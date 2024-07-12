@@ -33,9 +33,9 @@ function showText(chapterId) {
         // User clicked 'Cancel'
         return;
     }
-    const correctPassword = "O.S.I. Love you"; // Replace with your actual password
+    const correctPassword = "LUDOVICO"; // Replace with your actual password
     if (password === correctPassword) {
-        window.location.href = "index.html"; // Replace with your desired URL
+        window.location.href = "Ludovico.html"; // Replace with your desired URL
     } else {
         alert("Incorrect.");
     }
