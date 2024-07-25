@@ -35,7 +35,7 @@ function showText(chapterId) {
     }
     const correctPassword = "LUDOVICO"; // Replace with your actual password
     if (password === correctPassword) {
-        window.location.href = "Ludovico.html"; // Replace with your desired URL
+        window.location.href = "Secrets/Ludovico.html"; // Replace with your desired URL
     } else {
         alert("Incorrect.");
     }
