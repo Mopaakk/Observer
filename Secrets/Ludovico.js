@@ -15,5 +15,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 staticGif.src = 'Ludo.jpg'; // Replace with the last frame image of the GIF
             }, gifDuration);
         });
-    }, 70000); // 35 seconds delay
+    }, 35000); // 35 seconds delay
 });
